@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Задание 5: Калькулятор заказа</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header id="site-header">
+    <div class="header-inner">
+      <div id="header-brand">
+        <img id="logo" src="fernando.png" alt="Логотип" width="48" height="48">
+        <h1 id="site-title">Задание 5</h1>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <div class="wrapper">
+      <section class="card">
+        <h2>Калькулятор стоимости заказа</h2>
+
+        <form id="order-form">
+          <div class="form-group">
+            <label for="quantity">Количество товара:</label>
+            <input type="text" id="quantity" name="quantity" placeholder="Введите количество (например, 2)">
+          </div>
+
+          <div class="form-group">
+            <label for="product">Выберите товар:</label>
+            <select id="product" name="product">
+              <option value="30000">Смартфон — 30 000 руб.</option>
+              <option value="75000">Ноутбук — 75 000 руб.</option>
+              <option value="5000">Наушники — 5 000 руб.</option>
+              <option value="15000">Умные часы — 15 000 руб.</option>
+              <option value="45000">Планшет — 45 000 руб.</option>
+            </select>
+          </div>
+
+          <button type="button" id="calculate-btn">Подсчитать стоимость</button>
+
+          <div id="error-message" class="error-msg"></div>
+          <div id="result" class="result-msg"></div>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer id="site-footer">
+    <div class="wrapper">
+      <p>© Мирзоев Вадим</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
